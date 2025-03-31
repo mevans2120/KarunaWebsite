@@ -1,0 +1,83 @@
+import React from 'react';
+
+const GetInTouchPage = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-800">
+      {/* Header */}
+      <section className="py-16 bg-purple-700 text-white text-center">
+        <h1 className="text-4xl font-light mb-4">Get in Touch</h1>
+        <p className="text-lg max-w-2xl mx-auto">
+          Whether you have questions, want to schedule a session, or need directions to the yurt — Karuna is here to connect with you.
+        </p>
+      </section>
+
+      {/* Contact Form */}
+      <section className="py-16 px-4">
+        <div className="max-w-xl mx-auto bg-white shadow-lg rounded-lg p-8">
+          <form 
+            action="https://formspree.io/f/yourFormID" // Replace with actual Formspree endpoint
+            method="POST"
+          >
+            <div className="mb-6">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                Your Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
+
+            <div className="mb-6">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                Your Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
+
+            <div className="mb-6">
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                Your Message
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                rows="6"
+                required
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-purple-700 text-white py-3 rounded-md font-medium hover:bg-purple-800 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      {/* Directions */}
+      <section className="py-12 px-4 bg-gray-100">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-2xl font-light text-purple-900 mb-4">Visit the Yurt</h2>
+          <p className="text-gray-700">
+            Karuna's yurt is nestled in a peaceful part of Eugene, Oregon. Directions will be provided upon scheduling to protect the privacy and sacredness of the space.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default GetInTouchPage;
