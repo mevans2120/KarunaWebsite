@@ -1,0 +1,70 @@
+import React from 'react';
+
+const DrumCirclePage = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-800">
+      {/* Hero Section */}
+      <section
+        className="relative h-screen bg-cover bg-center"
+        style={{ backgroundImage: 'url("/path-to-drum-circle-image.jpg")' }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center">
+          <h1 className="text-5xl font-light mb-4">Join Our Monthly Drum Circle</h1>
+          <p className="text-xl max-w-2xl">
+            Experience the healing power of rhythm and community under the Eugene sky.
+          </p>
+        </div>
+      </section>
+
+      {/* Information Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-light text-purple-900 mb-6">Event Details</h2>
+          <p className="text-lg mb-4">
+            <strong>Schedule:</strong> First Tuesday of Every Month at 7:30 PM
+          </p>
+          <p className="text-lg mb-4">
+            <strong>Location:</strong> Karuna's Yurt, Eugene, Oregon
+          </p>
+          <p className="text-lg">
+            Join us in a welcoming space to connect, heal, and celebrate through the ancient practice of communal drumming. No experience necessary, and instruments are provided.
+          </p>
+        </div>
+      </section>
+
+      {/* Visual Gallery */}
+      <section className="py-16 bg-purple-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-light text-purple-900 text-center mb-8">Gallery</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Replace with actual image paths */}
+            <img src="/path-to-image1.jpg" alt="Drum Circle 1" className="rounded-lg shadow-md" />
+            <img src="/path-to-image2.jpg" alt="Drum Circle 2" className="rounded-lg shadow-md" />
+            <img src="/path-to-image3.jpg" alt="Drum Circle 3" className="rounded-lg shadow-md" />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-light text-purple-900 mb-8 text-center">Frequently Asked Questions</h2>
+          <div className="mb-6">
+            <h3 className="text-lg font-medium text-gray-800 mb-2">Do I need to bring my own drum?</h3>
+            <p className="text-gray-700">
+              Instruments are provided, but feel free to bring your own if you prefer.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-medium text-gray-800 mb-2">Is prior experience required?</h3>
+            <p className="text-gray-700">
+              Not at all! Our drum circles are open to everyone, regardless of experience level.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default DrumCirclePage;
